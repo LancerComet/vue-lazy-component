@@ -1,10 +1,12 @@
 import Vue from 'vue'
-import Lazy from '../src/vue-lazy-component';
-import App from './app';
+import Block from './block'
+import Lazy from '../src/vue-lazy-component'
 
-Vue.use(Lazy);
+Vue.use(Lazy)
 
-new Vue({
-    el: '#app',
-    components: { App }
-});
+const App = new Vue({
+  el: 'body',
+  components: { 
+    Block
+  }
+})

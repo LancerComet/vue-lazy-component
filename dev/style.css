@@ -87,3 +87,8 @@ a:hover {
     transform: translate(0, -2px);
 }
 
+.block {
+  height: 500px;
+  margin-top: 50px;
+  background-color: darkcyan;
+}

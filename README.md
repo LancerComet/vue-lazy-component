@@ -2,29 +2,16 @@
 
 > Vue directive for lazy load components or elements, lazy load some components which not in the first screen can improve vue initialization performance.
 
-[Live demo](http://coffcer.github.io/vue-lazy-component/)
+This is the scrolling version, based on: [Vue-Lazy-Component](https://github.com/Coffcer/vue-lazy-component)
 
-## Usage
+Cridit: Coffcer
 
-``` javascript
-import Vue from 'vue';
-import lazy from 'vue-lazy-component';
+For more detail please check the link below.
 
-Vue.use(lazy);
-```
+## What's new about scrolling version
+The componet will be initialized by scrolling or resizing the window if it becomes visible.
 
-``` html
-<!--Lazy load the element, 3s-->
-<div v-lazy="3000">
-    <p>Chlid</p>
-    <component></component>
-</div>
-<!--Lazy load the component-->
-<component v-lazy="3000"></component>
-
-<!--Lazy load 0s, the effect is like setTimeout(fn, 0) -->
-<component v-lazy></component>
-```
+The original version initials components by counting down.
 
 ## Build Setup
 
